@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(67,66,80);
+    background-position: center; 
+    background: linear-gradient(90deg, rgba(67,66,80,1) 0%, rgba(37,138,108,1) 35%, rgba(101,112,115,1) 100%);
+}
+ nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: #1c2b31;
+    color: antiquewhite;
+}
+.nav-button{
+    display: flex;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    padding: 12px;
+    outline: none;
+    font-weight: 600;
+}
+.nav-button img{
+    width:20px ;
+    height: 20px;
+}
+.nav-button:active{
+    transform: scale(0.98) ;
+}
+.nav-button:hover{
+   background: #435e68;
+}
+
+footer{
+      margin-top: 25rem;
+  padding: 40px;
+  background: rgb(47, 104, 107);
+  text-align: center;
+}
+/* Main content */
+
+main {
+	display: flex;
+	justify-content: center;
+}
+h2{
+  color: aliceblue;
+  text-align: center;
+}
+
+.container {
+	width: 800px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(250px, 1fr));
+	padding: 20px;
+	gap: 10px;
+  margin: 52px;
+}
+.card {
+	border: none;
+	font-size: 1.2rem;
+	padding: 15px;
+	border-radius: 15px;
+	background: linear-gradient(
+		145deg,
+		rgba(133, 147, 125, 0.865),
+		rgba(179, 183, 181, 0.8)
+	);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+		inset 0 0 10px rgba(52, 50, 50, 0);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.801),
+		inset 0 0 15px rgba(255, 255, 255, 0.2);
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+/* Buttons */
+
+.card .buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+.card button {
+	padding: 0px 5px;
+	border-radius: 10px;
+	font-size: 1rem;
+	border: 1px solid rgb(228, 228, 228);
+	background: linear-gradient(
+		145deg,
+		rgba(71, 72, 71, 0.8),
+		rgba(59, 59, 57, 0.8)
+	);
+	font-size: 1.3rem;
+	font-weight: bold;
+	padding: 5px 10px;
+	transition: all 0.1s ease-in-out;
+	color: rgb(223, 222, 222);
+}
+.not-read {
+	color: red;
+}
+
+.card button:hover {
+	transform: scale(1.2);
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	border: 1px solid black;
+	color: black;
+}
+
+.card .remove:hover {
+	color: red;
+}
+/* Form */
+
+dialog {
+	border-radius: 10px;
+	background: transparent;
+	border: 2px solid rgb(187, 187, 187);
+	backdrop-filter: blur(5px);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 1.5rem;
+  
+}
+
+#status {
+	width: 20px;
+	height: 20px;
+	accent-color: rgb(220, 210, 210);
+	background-color: transparent;
+	border: 2px solid black;
+}
+
+input[type="text"] {
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	display: block;
+	font-size: 1.5rem;
+	padding: 5px;
+	border-radius: 15px;
+	border: 2px solid black;
+	background: transparent;
+	color: white;
+	font-family: inherit;
+	font-weight: 500;
+}
+
+input[type="text"]:focus {
+	outline: none;
+	border: 2px solid white;
+}
+
+form label {
+	color: rgb(199, 199, 199);
+	font-weight: bold;
+}
+
+::backdrop {
+	backdrop-filter: blur(1px);
+}
+
+/* Form buttons */
+
+form .buttons {
+	display: flex;
+	gap: 10px;
+}
+
+form button {
+	background: transparent;
+	font-size: 1.5rem;
+	border-radius: 5px;
+	flex: 1;
+	border: 2px solid black;
+	/* background-color: white; */
+	font-family: inherit;
+	transition: all 0.1s ease-in-out;
+	font-weight: bold;
+}
+
+form button:hover {
+	transform: scale(1.1);
+	background-color: black;
+	color: white;
+}

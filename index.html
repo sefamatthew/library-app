@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library app</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+			integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Bookshelf</h2>
+        <button class="nav-button" >Add Book
+            <img src="pics/shopping_cart.png" alt="shopping_cart png">
+        </button>
+        </nav>
+    </header>
+    <h2>Feel free to add  books to the shelf</h2>
+    <main>
+      
+      <div class="container">
+        
+				<!-- <div class="card">
+					<div>
+						<p>The hobbit</p>
+						<p>By John Ronald</p>
+						<p>1000 pages</p>
+					</div>
+
+					<div class="buttons">
+						<button class="edit"><i class="fa-solid fa-pen"></i></button>
+						<button class="remove"><i class="fa-solid fa-x"></i></button>
+						<button class="state">read</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<div>
+						<p>The hobbit</p>
+						<p>By John Ronald</p>
+						<p>1000 pages</p>
+					</div>
+
+					<div class="buttons">
+						<button class="edit"><i class="fa-solid fa-pen"></i></button>
+						<button class="remove"><i class="fa-solid fa-x"></i></button>
+						<button class="state">read</button>
+					</div>
+				</div>
+
+				<div class="card">
+					<div>
+						<p>The hobbit</p>
+						<p>By John Ronald</p>
+						<p>1000 pages</p>
+					</div>
+
+					<div class="buttons">
+						<button class="edit"><i class="fa-solid fa-pen"></i></button>
+						<button class="remove"><i class="fa-solid fa-x"></i></button>
+						<button class="state">read</button>
+					</div>
+				</div> -->
+
+				<dialog>
+					<form id="bookForm" action="">
+						<div>
+							<label for="name">Book name</label>
+							<input type="text" name="name" id="name" required />
+						</div>
+						<div>
+							<label for="author">Author</label>
+							<input type="text" name="author" id="author" required />
+						</div>
+
+						<div>
+							<label for="pages">Number of pages</label>
+							<input type="text" name="pages" id="pages" required />
+						</div>
+						<div>
+							<label for="status">status</label>
+							<input type="checkbox" id="status" name="status" />
+						</div>
+
+						<div class="buttons">
+							<button id="submit" type="submit">Add</button>
+							<button id="close" type="reset">Close</button>
+						</div>
+					</form>
+				</dialog>
+			</div>
+    </main>
+    <footer>
+        <a href="#">Matthew Sefa</a>
+    </footer>
+</body>
+</html>
